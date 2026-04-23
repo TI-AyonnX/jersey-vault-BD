@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop | Jersey Vault BD</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav>
+        <a href="index.html" class="logo">Jersey Vault BD</a>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="shop.html">Shop Designs</a></li>
+            <li><a class="cart-btn" onclick="checkout()">Checkout (<span class="cart-count">0</span>)</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h2 style="text-align: center; margin-bottom: 40px; font-size: 2.5rem;">2026 Season Collection</h2>
+        
+        <div class="grid">
+            <div class="card">
+                <img src="barca.jpg" alt="Home Kit">
+                <h3>FC Barcelona Home Kit</h3>
+                <p class="price">৳ 1,200</p>
+                <button class="btn-add" onclick="addToCart('Red Devils Home Kit', 1200)">Add to Cart</button>
+            </div>
+
+            <div class="card">
+                <img src="arsenal.jpg" alt="Away Kit">
+                <h3>Arsenal Red Away Kit</h3>
+                <p class="price">৳ 1,100</p>
+                <button class="btn-add" onclick="addToCart('City Blue Away Kit', 1500)">Add to Cart</button>
+            </div>
+
+            <div class="card">
+                <img src="madrid.jpg" alt="Away Kit">
+                <h3>Real Madrid Away Kit</h3>
+                <p class="price">৳ 2,100</p>
+                <button class="btn-add" onclick="addToCart('City Blue Away Kit', 2100)">Add to Cart</button>
+            </div>
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1521191080065-0a37e5c6a1e3?q=80&w=600" alt="Retro Kit">
+                <h3>90s Vintage Classic</h3>
+                <p class="price">৳ 1,500</p>
+                <button class="btn-add" onclick="addToCart('90s Vintage Classic', 1500)">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Jersey Vault BD. Cash on Delivery Available.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

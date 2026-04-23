@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    color: #212529;
+}
+
+/* Navigation Bar */
+nav {
+    background-color: #111;
+    color: white;
+    padding: 1rem 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+nav .logo {
+    font-size: 1.5rem;
+    font-weight: 800;
+    text-decoration: none;
+    color: white;
+    letter-spacing: 1px;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+nav a:hover {
+    color: #25D366;
+}
+.cart-btn {
+    background: #25D366;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Hero Section (Homepage) */
+.hero {
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('logoo.jpg') no-repeat center / 50% #1a1a1a;;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+.hero-tagline {
+    font-size: 3.0rem !important; 
+    font-weight: 800;   
+    line-height: 1.2;
+    margin-bottom: 0px; 
+    text-align: center;  
+    text-shadow: 3px 3px 6px rgba(0,0,0,0.9);
+}
+.hero h1 {
+    font-size: 4rem;
+    margin-bottom: 10px;
+}
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    margin-top: 7px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.9);
+}
+.btn-primary {
+    background-color: #e63946;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+.btn-primary:hover {
+    background-color: #c1121f;
+}
+
+/* Product Grid (Shop Page) */
+.container {
+    padding: 4rem 5%;
+    max-width: 1200px;
+    margin: auto;
+}
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+.card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    text-align: center;
+    padding-bottom: 20px;
+}
+.card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+.card h3 {
+    margin: 15px 0 5px;
+}
+.price {
+    color: #e63946;
+    font-weight: 800;
+    font-size: 1.3rem;
+}
+.btn-add {
+    background-color: #111;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-family: inherit;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+.btn-add:hover {
+    background-color: #333;
+}
+
+footer {
+    background: #111;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
